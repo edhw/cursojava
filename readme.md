@@ -2,6 +2,12 @@
 O projeto pode ser utilizado como base para a construção de uma aplicação de cadastro e consultas simples.
 A aplicação utiliza as seguintes tecnologias:
 
+JKEV Technologies
+Gerente: Eduardo Vianna
+Colaboradores: Karla dos Santos, Vinicius Ajala e Jo�o Paulo Perini
+
+
+
 	1. Java 8 e JPA
 	2. Hibernate e Entity Manager
 	3. JavaFX
