@@ -1,5 +1,7 @@
 package com.bigriver.samples.service;
 
+import javax.persistence.OneToOne;
+
 import com.bigriver.samples.model.*;
 
 public class Venda {
@@ -13,7 +15,7 @@ public class Venda {
 	public void mostrarDados(){
 		
 	}
-	
+//	@OneToOne 
 	public Pessoa getCliente() {
 		return cliente;
 	}
@@ -21,7 +23,7 @@ public class Venda {
 	public void setCliente(Pessoa cliente) {
 		this.cliente = cliente;
 	}
-	
+//	@OneToOne 
 	public Remedio getRemedio() {
 		return remedio;
 	}
