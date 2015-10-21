@@ -1,6 +1,8 @@
 package com.bigriver.samples.model;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 import com.dooapp.fxform.annotation.NonVisual;
 
@@ -21,6 +23,8 @@ public class Remedio {
 	private String tarja;
 	private Float preco;
 	
+	@Id
+	@GeneratedValue
 	public int getId() {
 		return id;
 	}
