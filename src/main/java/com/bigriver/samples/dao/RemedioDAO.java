@@ -17,7 +17,7 @@ public class RemedioDAO implements DAO<Remedio>{
 		/**
 		 * Salvar uma ocorrência de Remedio no Banco de Dados
 		 * @param objeto A ocorrência que deverá ser salva
-		 * @return A pessoa que foi salva
+		 * @return o remédio que foi salvo
 		 */
 		
 		@Override
@@ -48,7 +48,7 @@ public class RemedioDAO implements DAO<Remedio>{
 			EntityManager gerenteEntidades = BancoDeDados.abreEntityManager();
 			//Abre uma transação com o BD
 			gerenteEntidades.getTransaction().begin();		
-			//Busca uma pessoa no BD pelo ID - X
+			//Busca um remédio no BD pelo ID - X
 			Remedio busca = gerenteEntidades.find(Remedio.class, id);
 			//Conclui a transação com o BD, garantindo a execução da operação
 			gerenteEntidades.getTransaction().commit();
@@ -67,7 +67,7 @@ public class RemedioDAO implements DAO<Remedio>{
 			
 			EntityManager gerenteEntidades = BancoDeDados.abreEntityManager();
 			gerenteEntidades.getTransaction().begin();
-			//Cria uma QUERY que buscará TODAS as Pessoas no BD
+			//Cria uma QUERY que buscará todos os remédios no BD
 			@SuppressWarnings("unchecked")
 			Collection<Remedio> todos = gerenteEntidades.createQuery("from Remedio")
 					.getResultList();
