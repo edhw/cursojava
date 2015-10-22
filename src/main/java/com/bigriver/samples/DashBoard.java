@@ -70,7 +70,7 @@ public class DashBoard extends Application {
 		TelaVendas<Remedio> telaVendasRemedios = new TelaVendas<>("Venda Remédios", vendaRemedio);
 		
 		//Cria uma tela de DashBoard com as telas de Consulta e Cadastro de Pessoas
-		TelaDashboard telaDashboard = new TelaDashboard(consulta, cadastro, telaVendas,cadastroRemedio,consultaRemedio, telaVendasRemedios);
+		TelaDashboard telaDashboard = new TelaDashboard(consulta, cadastro,cadastroRemedio,consultaRemedio, telaVendasRemedios);
 		
 		//Cria uma Scene (JavaFX) com a tela de consulta
 		Scene scene = new Scene(telaDashboard);
