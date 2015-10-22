@@ -48,6 +48,7 @@ public class VendaDAO implements DAO<Venda>{
 		return todos;
 	}
 
+	
 	@Override
 	public Venda buscar(int id) {
 		// TODO Auto-generated method stub

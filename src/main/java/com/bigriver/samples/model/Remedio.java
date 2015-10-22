@@ -67,7 +67,7 @@ public class Remedio {
 	
 	@Override
 	public String toString() {
-		return ("Nome: "+ nome +"\nValidade :" + validade + "\nTarja: " + tarja + "\nPreco: " + preco);
+		return ("\nNome: "+ nome +"\nValidade: " + validade + "\nTarja: " + tarja + "\nPreco: R$" + preco);
 	}
 	
 }
