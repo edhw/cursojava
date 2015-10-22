@@ -6,6 +6,8 @@ JKEV Technologies
 Gerente: Eduardo Vianna
 Colaboradores: Karla dos Santos, Vinicius Ajala e João Paulo Perini
 
+Dados Completos do Sistema: 
+O sistema oferece suporte a uma farmácia, armazenando seus produtos, que também podem ser vendidos a um cliente cadastrado. Os produtos são classificados por nome, data de validade, tarja e seu preço. Já os clientes são identificados por cpf(id), nome, idade endereço.
 
 	1. Java 8 e JPA
 	2. Hibernate e Entity Manager
