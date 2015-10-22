@@ -84,6 +84,6 @@ public class Pessoa {
 	
 	@Override
 	public String toString() {
-		return nome;
+		return ("\nCliente: " + id + "\nNome: " + nome + "\nIdade: " + idade);
 	}
 }
