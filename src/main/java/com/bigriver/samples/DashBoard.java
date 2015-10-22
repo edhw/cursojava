@@ -6,6 +6,7 @@ import com.bigriver.samples.model.Endereco;
 import com.bigriver.samples.model.Pessoa;
 import com.bigriver.samples.model.Remedio;
 import com.bigriver.samples.service.VendaPessoa;
+import com.bigriver.samples.service.VendaRemedio;
 import com.bigriver.samples.view.TelaCadastro;
 import com.bigriver.samples.view.TelaConsulta;
 import com.bigriver.samples.view.TelaDashboard;
@@ -62,8 +63,14 @@ public class DashBoard extends Application {
 		TelaConsulta<Remedio> consultaRemedio = new TelaConsulta<>("Consulta de Remedios", remedioDao);
 		
 		
+		//Cria uma Venda de remedios
+		VendaRemedio vendaRemedio = new VendaRemedio();
+				
+		//Cria uma Tela de Vendas
+		TelaVendas<Remedio> telaVendasRemedios = new TelaVendas<>("Venda Remédios", vendaRemedio);
+		
 		//Cria uma tela de DashBoard com as telas de Consulta e Cadastro de Pessoas
-		TelaDashboard telaDashboard = new TelaDashboard(consulta, cadastro, telaVendas,cadastroRemedio,consultaRemedio);
+		TelaDashboard telaDashboard = new TelaDashboard(consulta, cadastro, telaVendas,cadastroRemedio,consultaRemedio, telaVendasRemedios);
 		
 		//Cria uma Scene (JavaFX) com a tela de consulta
 		Scene scene = new Scene(telaDashboard);
