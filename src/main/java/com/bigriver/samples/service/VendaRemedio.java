@@ -7,16 +7,18 @@ import com.bigriver.samples.dao.RemedioDAO;
 import com.bigriver.samples.dao.VendaDAO;
 import com.bigriver.samples.model.*;
 
-public class VendaRemedio /*implements ServicoVenda<VendaRemedio>*/ {
-	/*//Um atributo primário para busca de pessoas
-	private VendaDAO dao;
-	
-	public VendaRemedio() {
-		this.dao = new VendaDAO();
-	}
-	
+public class VendaRemedio implements ServicoVenda<Remedio> {
+
 	@Override
-	public Collection<Venda> todosNaoVendidos() {
-		return dao.todos();
-	}*/
+	public Collection<Remedio> todosNaoVendidos() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void vender(Remedio produto, Pessoa cliente) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

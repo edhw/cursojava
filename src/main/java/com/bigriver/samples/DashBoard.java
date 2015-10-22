@@ -44,10 +44,10 @@ public class DashBoard extends Application {
 		TelaConsulta<Pessoa> consulta = new TelaConsulta<>("Consulta Pessoas", pessoaDao);
 		
 		//Cria uma Venda Ilegal de Pessoas
-		VendaPessoa vendaPessoas = new VendaPessoa();
+		//VendaPessoa vendaPessoas = new VendaPessoa();
 		
 		//Cria uma Tela de Vendas
-		TelaVendas<Pessoa> telaVendas = new TelaVendas<>("Venda Ilegal Pessoas", vendaPessoas);
+		//TelaVendas<Pessoa> telaVendas = new TelaVendas<>("Venda Ilegal Pessoas", vendaPessoas);
 		
 		
 		//carrega um objeto de Remedio
@@ -70,7 +70,7 @@ public class DashBoard extends Application {
 		TelaVendas<Remedio> telaVendasRemedios = new TelaVendas<>("Venda Remédios", vendaRemedio);
 		
 		//Cria uma tela de DashBoard com as telas de Consulta e Cadastro de Pessoas
-		TelaDashboard telaDashboard = new TelaDashboard(consulta, cadastro,cadastroRemedio,consultaRemedio, telaVendasRemedios);
+		TelaDashboard telaDashboard = new TelaDashboard(consulta, cadastro, cadastroRemedio, consultaRemedio, telaVendasRemedios);
 		
 		//Cria uma Scene (JavaFX) com a tela de consulta
 		Scene scene = new Scene(telaDashboard);
