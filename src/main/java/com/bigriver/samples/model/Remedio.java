@@ -3,7 +3,7 @@ package com.bigriver.samples.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-
+import javax.persistence.OneToOne;
 import com.dooapp.fxform.annotation.NonVisual;
 
 
@@ -22,6 +22,7 @@ public class Remedio {
 	private String validade;
 	private String tarja;
 	private Float preco;
+	private Venda venda;
 	
 	@Id
 	@GeneratedValue
@@ -68,6 +69,14 @@ public class Remedio {
 	@Override
 	public String toString() {
 		return ("\nNome: "+ nome +"\nValidade: " + validade + "\nTarja: " + tarja + "\nPreco: R$" + preco);
+	}
+	@OneToOne(mappedBy= "remedio")
+	public Venda getVenda() {
+		return venda;
+	}
+
+	public void setVenda(Venda venda) {
+		this.venda = venda;
 	}
 	
 }

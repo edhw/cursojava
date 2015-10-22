@@ -29,6 +29,7 @@ public class Pessoa {
 	
 	private String nome;
 	private int idade;
+	private Venda venda;
 	
 	//Não exibir em formulários
 	@NonVisual
@@ -85,5 +86,13 @@ public class Pessoa {
 	@Override
 	public String toString() {
 		return ("\nCliente: " + id + "\nNome: " + nome + "\nIdade: " + idade);
+	}
+	@OneToOne(mappedBy="cliente")
+	public Venda getVenda() {
+		return venda;
+	}
+
+	public void setVenda(Venda venda) {
+		this.venda = venda;
 	}
 }
