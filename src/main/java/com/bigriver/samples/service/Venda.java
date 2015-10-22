@@ -1,7 +1,5 @@
 package com.bigriver.samples.service;
 
-import javax.persistence.OneToOne;
-
 import com.bigriver.samples.model.*;
 
 public class Venda {

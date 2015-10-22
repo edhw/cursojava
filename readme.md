@@ -4,8 +4,7 @@ A aplicação utiliza as seguintes tecnologias:
 
 JKEV Technologies
 Gerente: Eduardo Vianna
-Colaboradores: Karla dos Santos, Vinicius Ajala e Jo�o Paulo Perini
-
+Colaboradores: Karla dos Santos, Vinicius Ajala e João Paulo Perini
 
 
 	1. Java 8 e JPA
