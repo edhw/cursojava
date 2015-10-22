@@ -8,6 +8,8 @@ Colaboradores: Karla dos Santos, Vinicius Ajala e Jo�o Paulo Perini
 
 
 
+
+
 	1. Java 8 e JPA
 	2. Hibernate e Entity Manager
 	3. JavaFX

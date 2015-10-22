@@ -8,12 +8,12 @@ import com.dooapp.fxform.annotation.NonVisual;
 
 
 /**
- * Classe da tabela Pessoa do Banco de Dados.
+ * Classe da tabela Remedio do Banco de Dados
  * @author Karla
  *
  */
+
 @Entity
-//@EntityListeners(RemedioListener.class)
 public class Remedio {
 	@NonVisual
 	private int id;
