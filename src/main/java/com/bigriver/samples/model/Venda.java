@@ -37,6 +37,7 @@ public class Venda {
 	
 	public void setRemedio(Remedio remedio) {
 		this.remedio = remedio;
+		this.remedio.setVendido(true);
 	}
 
 	@Id

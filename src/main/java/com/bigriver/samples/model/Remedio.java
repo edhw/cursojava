@@ -23,7 +23,17 @@ public class Remedio {
 	private String tarja;
 	private Float preco;
 	private Venda venda;
+	@NonVisual
+	private boolean vendido = false;
 	
+	public boolean isVendido() {
+		return vendido;
+	}
+
+	public void setVendido(boolean vendido) {
+		this.vendido = vendido;
+	}
+
 	@Id
 	@GeneratedValue
 	public int getId() {

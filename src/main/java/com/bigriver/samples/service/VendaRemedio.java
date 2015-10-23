@@ -1,23 +1,27 @@
 package com.bigriver.samples.service;
 
-import java.util.Collection;
 
-import com.bigriver.samples.dao.PessoaDAO;
+import java.util.Collection;
+import java.util.Date;
+
 import com.bigriver.samples.dao.RemedioDAO;
-import com.bigriver.samples.dao.VendaDAO;
 import com.bigriver.samples.model.*;
 
 public class VendaRemedio implements ServicoVenda<Remedio> {
+	private RemedioDAO dao = new RemedioDAO();
 
 	@Override
 	public Collection<Remedio> todosNaoVendidos() {
-		// TODO Auto-generated method stub
-		return null;
+		return dao.todosNaoVendidos();
 	}
 
 	@Override
 	public void vender(Remedio produto, Pessoa cliente) {
-		// TODO Auto-generated method stub
+		Venda venda = new Venda();
+		venda.setCliente(cliente);
+		venda.setRemedio(produto);
+		Date data = new Date();
+		venda.setTimestamps(data);
 		
 	}
 

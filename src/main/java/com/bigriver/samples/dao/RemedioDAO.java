@@ -1,8 +1,11 @@
 package com.bigriver.samples.dao;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 import javax.persistence.EntityManager;
+import javax.persistence.Query;
 
 import com.bigriver.samples.BancoDeDados;
 import com.bigriver.samples.model.Remedio;
@@ -78,5 +81,19 @@ public class RemedioDAO implements DAO<Remedio>{
 			return todos;
 		}
 		
-		
+		public Collection<Remedio> todosNaoVendidos() {
+			
+			EntityManager gerenteEntidades = BancoDeDados.abreEntityManager();
+			gerenteEntidades.getTransaction().begin();
+
+			Query query = gerenteEntidades.createQuery("SELECT r FROM Remedio r WHERE r.vendido= 0");
+			//Cria uma QUERY que buscará TODAS as Pessoas no BD
+			@SuppressWarnings("unchecked")
+			Collection<Remedio> naoVendidos  = query.getResultList();
+			//Garante a conclusão da operação
+			gerenteEntidades.getTransaction().commit();
+			gerenteEntidades.close();
+			
+			return naoVendidos;
+		}
 }
